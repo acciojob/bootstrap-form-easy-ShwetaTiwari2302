@@ -5,17 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Internship Application Form</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .was-validated .form-control:invalid ~ .invalid-feedback {
-            display: block;
-        }
-    </style>
 </head>
 <body>
 
     <div class="container mt-5">
         <h2>Internship Application Form</h2>
         <form class="needs-validation" novalidate>
+
+			
+            <!-- Graduation Year -->
+            <div class="form-group">
+                <label for="graduation-year-input">Graduation Year</label>
+                <select class="form-control" id="graduation-year-input" required>
+                    <option value="">Select your graduation year</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select your graduation year.
+                </div>
+            </div>
             <!-- First Name -->
             <div class="form-group">
                 <label for="first-name-input">First Name</label>
@@ -58,21 +69,6 @@
                 <input type="number" class="form-control" id="roll-no-input" required>
                 <div class="invalid-feedback">
                     Please enter your roll number.
-                </div>
-            </div>
-
-            <!-- Graduation Year -->
-            <div class="form-group">
-                <label for="graduation-year-input">Graduation Year</label>
-                <select class="form-control" id="graduation-year-input" required>
-                    <option value="">Select your graduation year</option>
-                    <option value="2020">2020</option>
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
-                    <option value="2023">2023</option>
-                </select>
-                <div class="invalid-feedback">
-                    Please select your graduation year.
                 </div>
             </div>
 
